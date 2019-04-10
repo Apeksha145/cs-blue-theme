@@ -1,5 +1,5 @@
 /*topbar css start*/
-p{color:#6b8092;}
+p{color:#576e82;}
 .top {
     background-color: #222;
     padding: 10px 0px 0px 0px;
@@ -327,6 +327,7 @@ padding:0px 0 0px 20px;
 	.practice-pt{padding-top:20px;}
     .footer-bottom p{font-size:9px;}
 	.parea h5{color:#000000d6;font-weight:600;font-size:16px;}
+	.prom h5{font-size:14px;}
 }
 @media only screen and (max-device-width:2560px) and (min-device-width: 768px){
 .single {
