@@ -64,8 +64,8 @@ background-color: #3e8e41;
 .welcometext a{text-decoration:none;color:#002c6d;font-weight:500;}
 /*dropdown css end*/
 
-.practice{background-color:rgb(204, 204, 204);padding:0px 0px 55px;/*background-image:url("../images/pracback1.jpg");*/}
-.contact{background-color:rgb(204, 204, 204);padding:0px 0px 30px;/*background-image:url("../images/pracback1.jpg");*/}
+.practice{background-color:rgb(204, 204, 204, 0.78);padding:0px 0px 55px;/*background-image:url("../images/pracback1.jpg");*/}
+.contact{background-color:rgb(204, 204, 204, 0.78);padding:0px 0px 30px;/*background-image:url("../images/pracback1.jpg");*/}
 .contact p{color:darkslategrey;}
 .box{background-color:;margin:10px 0px;height:100px;padding:15px;font-weight:bold;box-shadow: 5px 10px #888888;}
 .box  a{color:black;text-decoration:none;}
@@ -232,6 +232,7 @@ border-bottom: 0; }
 
 @media only screen and (min-device-width:768px) and (max-device-width:991px){
 	.box a{font-size:11px;}
+	.single li a{font-size:13px;}
 }
 .btn:hover{background-color:white;}
 /*css for table*/
@@ -321,12 +322,14 @@ padding:0px 0 0px 20px;
 @media only screen and (max-device-width:767px) and (min-device-width:280px){
 	.practice-pt{padding-top:20px;}
     .footer-bottom p{font-size:9px;}
+	.parea h5{color:#000000d6;font-weight:600;font-size:16px;}
 }
 @media only screen and (max-device-width:2560px) and (min-device-width: 768px){
 .single {
     padding: 30px 15px;
     margin-top:35px;
     background:#82a8de21;
+	/*background-image: linear-gradient(#82a8de21,#fff);*/
     border: 1px solid #f0f0f0;
 }	
 .practice-pt{padding-top:40px;}
@@ -340,5 +343,5 @@ padding:0px 0 0px 20px;
 .parea h5{color:#000000d6;font-weight:600;}
 .footer .text-grey p{color:#ffffffb3;}
 .areatext p{color:darkslategrey;text-align:justify;}
-.aboutfounder{background-color:#82a8de3d;padding:15px 0px 30px 0px;}
+.aboutfounder{/*background-color:#82a8de3d;*/ background-image: linear-gradient(#82a8de3d 10%,#fff 90%);padding:20px 0px 35px 0px;}
 .about{padding:15px 0px 30px 0px;}
