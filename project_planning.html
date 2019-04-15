@@ -5,65 +5,61 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<link rel="stylesheet" href="css/bootstrap4.css">
 		<link rel="stylesheet" href="css/skm.css">
+		<link href="css/hover.css" rel="stylesheet">
 		<link href="animate.css-master/animate.css" rel="stylesheet" />
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 		<title>SKM & ASSOCIATES</title>
 	</head>
-	<script>$(document).ready(function() {
-
-  var toggleAffix = function(affixElement, scrollElement, wrapper) {
-  
-    var height = affixElement.outerHeight(),
-        top = wrapper.offset().top;
-    
-    if (scrollElement.scrollTop() >= top){
-        wrapper.height(height);
-        affixElement.addClass("affix");
-    }
-    else {
-        affixElement.removeClass("affix");
-        wrapper.height('auto');
-    }
-      
-  };
-  
-
-  $('[data-toggle="affix"]').each(function() {
-    var ele = $(this),
-        wrapper = $('<div></div>');
-    
-    ele.before(wrapper);
-    $(window).on('scroll resize', function() {
-        toggleAffix(ele, $(this), wrapper);
-    });
-    
-    // init
-    toggleAffix(ele, $(window), wrapper);
-  });
-  
-});
+	<script>
+	$(document).ready(function() {
+		var toggleAffix = function(affixElement, scrollElement, wrapper) {
+			var height = affixElement.outerHeight(),
+				top = wrapper.offset().top;
+			
+			if (scrollElement.scrollTop() >= top){
+				wrapper.height(height);
+				affixElement.addClass("affix");
+			}
+			else {
+				affixElement.removeClass("affix");
+				wrapper.height('auto');
+			}  
+		};
+		$('[data-toggle="affix"]').each(function() {
+		var ele = $(this),
+			wrapper = $('<div></div>');
+		
+		ele.before(wrapper);
+		$(window).on('scroll resize', function() {
+			toggleAffix(ele, $(this), wrapper);
+		});
+		
+		// init
+		toggleAffix(ele, $(window), wrapper);
+		});  
+	});
 </script>
 	<body id="myPage">
 		<!--topbar-->
-		<div class="top text-center">
+		<div class="top">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-4 col-sm-6 col-6">
+					<div class="col-lg-4 col-sm-6 col-5 phn">
 					 <p><i class="fa fa-phone"></i> 
 						+91-8860608212</p>
 					</div>
-					<div class="col-lg-4 col-sm-6 col-6">
+					<div class="col-lg-4 col-sm-6 col-7 mail">
 					  <p><i class="fa fa-envelope-o"></i> 
 						samtaksimmy@gmail.com
 					</p>
 					</div>
-					<div class="col-lg-4 d-none d-lg-block">
+					<div class="col-lg-4 d-none d-lg-block facon">
 						<span>
-							<a href="http://www.facebook.com/pages/Beez-India-Natural-Products/119975571419571?ref=ts" target="_blank" title="facebook"><i class="fa fa-facebook-square"></i></a>
-							<a href="http://www.twitter.com/beezindia" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a>
-							<a href="http://www.linkedin.com/company/beez-india-natural-products-" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a>
+							<a href="http://www.facebook.com" target="_blank" title="facebook" class="hvr-icon-buzz-out"><i class="fa fa-facebook-square hvr-icon"></i></a>
+							<a href="http://www.twitter.com" target="_blank" title="twitter" class="hvr-icon-buzz-out"><i class="fa fa-twitter hvr-icon"></i></a>
+							<a href="http://www.linkedin.com" target="_blank" title="linkedin" class="hvr-icon-buzz-out"><i class="fa fa-linkedin hvr-icon"></i></a>
 						</span>
 					</div>
 				</div>
@@ -74,43 +70,43 @@
 		<!--navbar-->
 		<div class="container-fluid bg-head header-top d-md-block" data-toggle="affix">
 			<div class="container">
-			<nav class="navbar navbar-expand-lg navbar-light py-0">
-			  <a class="navbar-brand logo" href="index.html">
-				<img src="images/logo.png" class="img-fluid">
-			  </a>
-			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			  </button>
-			  <div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ml-auto text-light">
-				  <li class="nav-item">
-					<a class="nav-link" href="index.html">HOME</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="skm_about.html">ABOUT US</a>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="skm_aboutfounder.html">ABOUT FOUNDER</a>
-				  </li>
-				  <li class="nav-item dropdown active">
-					<a class="nav-link dropdown-toggle"  href="secretarial_compliances.html">AREAS OF PRACTICE</a>
-					<ul class="dropdown-content">
-					  <li><a href="secretarial_compliances.html" class="highlight">SECRETARIAL COMPLIANCES</a></li>
-					  <li><a href="fema_compliances.html">FEMA RELATED COMPLIANCES</a></li>
-					  <li><a href="appearance_liasioning.html">APPEARANCES & LIASIONING</a></li>
-					  <li><a href="legal.html">LEGAL</a></li>
-					  <li><a href="other_registration.html">OTHER REGISTRATION</a></li>
-					  <li><a href="financial_resource.html">RAISING OF FINANCIAL RESOURCES</a></li>
-					  <li><a href="project_planning.html">PROJECT PLANNING & IMPLEMENTATION</a></li>
-					  <li><a href="corporate.html">CORPORATE TRAINING SESSIONS AND GUEST LECTURE</a></li>
+				<nav class="navbar navbar-expand-lg navbar-light py-0">
+				  <a class="navbar-brand logo" href="index.html">
+					<img src="images/logo.png" class="img-fluid hvr-shadow">
+				  </a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto text-light">
+					  <li class="nav-item">
+						<a class="nav-link" href="index.html">HOME</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="skm_about.html">ABOUT US</a>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="skm_aboutfounder.html">ABOUT FOUNDER</a>
+					  </li>
+					  <li class="nav-item dropdown active">
+						<a class="nav-link dropdown-toggle"  href="secretarial_compliances.html">AREAS OF PRACTICE</a>
+						<ul class="dropdown-content">
+						  <li><a href="secretarial_compliances.html" class="highlight">SECRETARIAL COMPLIANCES</a></li>
+						  <li><a href="fema_compliances.html">FEMA RELATED COMPLIANCES</a></li>
+						  <li><a href="appearance_liasioning.html">APPEARANCES & LIASIONING</a></li>
+						  <li><a href="legal.html">LEGAL</a></li>
+						  <li><a href="other_registration.html">OTHER REGISTRATION</a></li>
+						  <li><a href="financial_resource.html">RAISING OF FINANCIAL RESOURCES</a></li>
+						  <li><a href="project_planning.html">PROJECT PLANNING & IMPLEMENTATION</a></li>
+						  <li><a href="corporate.html">CORPORATE TRAINING SESSIONS AND GUEST LECTURE</a></li>
+						</ul>
+					  </li>
+					  <li class="nav-item">
+						<a class="nav-link" href="skm_contact.html">CONTACT US</a>
+					  </li>
 					</ul>
-				  </li>
-				  <li class="nav-item">
-					<a class="nav-link" href="skm_contact.html">CONTACT US</a>
-				  </li>
-				</ul>
-			  </div>
-			</nav>
+				  </div>
+				</nav>
 			</div>
 		</div>
 		<!--navbar/-->
@@ -129,7 +125,7 @@
 				<div class="row">
 					<div class="col-md-8">
 						<div class="text-center parea practice-pt">
-							<h5 class="animated bounce ">Project Planning & Implementation</h5>
+							<h5 class="animated bounce ">Project Planning & Implementation Services</h5>
 							<img src="images/b1thina.png" class="img-fluid" style="vertical-align:top;">
 						</div>
 						<div class="row pt-3 pb-3 fc">
@@ -202,9 +198,9 @@
 								<div style="width:50px; height:2px;background-color:#82a8de;"></div>						
 								<div class="pt-2">
 								<span>
-									<a href="http://www.facebook.com/pages/Beez-India-Natural-Products/119975571419571?ref=ts" target="_blank" title="facebook"><i class="fa fa-facebook-square"></i></a>
-									<a href="http://www.twitter.com/beezindia" target="_blank" title="twitter"><i class="fa fa-twitter"></i></a>
-									<a href="http://www.linkedin.com/company/beez-india-natural-products-" target="_blank" title="linkedin"><i class="fa fa-linkedin"></i></a>
+									<a href="http://www.facebook.com" target="_blank" title="facebook" class="hvr-icon-buzz-out"><i class="fa fa-facebook-square hvr-icon"></i></a>
+									<a href="http://www.twitter.com" target="_blank" title="twitter" class="hvr-icon-buzz-out"><i class="fa fa-twitter hvr-icon"></i></a>
+									<a href="http://www.linkedin.com" target="_blank" title="linkedin" class="hvr-icon-buzz-out"><i class="fa fa-linkedin hvr-icon"></i></a>
 								</span>
 								</div>
 							</div>
@@ -214,16 +210,16 @@
 						<h6 class="pt-4">Quick Links</h6>
 						<div style="width:50px; height:2px;background-color:#82a8de;"></div>						
 						<ul class="pt-2">
-							<li><a href="indexskm2.html">Home</a></li>
-							<li><a href="skm_about.html">About Us</a></li>
-							<li><a href="skm_aboutfounder.html">About Founder</a></li>
-							<li><a href="secretarial_compliances.html">Areas of practice</a></li>
-							<li><a href="skm_contact.html">Contact Us</a></li>
+							<li><a href="index.html" class="hvr-skew-forward">Home</a></li>
+							<li><a href="skm_about.html" class="hvr-skew-forward">About Us</a></li>
+							<li><a href="skm_aboutfounder.html" class="hvr-skew-forward">About Founder</a></li>
+							<li><a href="secretarial_compliances.html" class="hvr-skew-forward">Areas of practice</a></li>
+							<li><a href="skm_contact.html" class="hvr-skew-forward">Contact Us</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4 col-sm-12 col-12 text-center">
 						<h6 class="pt-4">Find us on Google Map</h6>
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.4735639646246!2d77.35777001494169!3d28.64553589024344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfaac89e02da7%3A0x8df9b6fb4b40baf9!2sFood+Paradise+Indirapuram!5e0!3m2!1sen!2sin!4v1554106416347!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0" class="pt-2" allowfullscreen></iframe>
+                		<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3501.5429190963846!2d77.35958781508283!3d28.643458232413472!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sFF-2%2C+Plot+No-782%2C+Niti+Khand-1%2C+Indirapuram%2C+Ghaziabad%2C+UP-201010!5e0!3m2!1sen!2sin!4v1554897626211!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0" class="pt-2" allowfullscreen></iframe>
 					</div>
 					<div class="col-md-3 col-sm-12 col-12 text-center">
 						<h6 class="pt-4">Get in touch</h6>
@@ -244,7 +240,7 @@
 								</div>
 								<div class="row form-group" id="cntbtn"align="center">
 									<div class="col-sm-12 col-xs-12">
-									<button type="email" class="btn btn-default" style="color:#222;border:0;margin-left:-8px;">Submit</button>
+									<button type="email" class="btn btn-default hvr-ripple-out" style="color:#222;border:0;margin-left:-8px;">Submit</button>
 									</div>
 								</div>
 							</form>
@@ -254,8 +250,8 @@
 				<div class="row">
 					<div class="col-md-12 text-grey">
 						<p class="">This document is the property of Samta K Simmy & Associates, Company Secretaries* Firm and it provides the
-general information about the firm, its people and its services offerings. Should you desire any further
-information about us, please feel free to revert us at samtaksimmy@gmail.com</p>
+						general information about the firm, its people and its services offerings. Should you desire any further
+						information about us, please feel free to revert us at samtaksimmy@gmail.com</p>
 					</div>
 				</div>
 			</div>
